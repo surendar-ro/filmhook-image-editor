@@ -1,0 +1,48 @@
+{
+  "expo": {
+    "name": "Filmhook Editor",
+    "slug": "filmhook-editor",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "resizeMode": "contain",
+      "backgroundColor": "#0A0A1A"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.filmhook.editor",
+      "infoPlist": {
+        "NSCameraUsageDescription": "This app uses the camera to let you take photos for editing.",
+        "NSPhotoLibraryUsageDescription": "This app accesses your photo library to let you pick images for editing.",
+        "NSPhotoLibraryAddUsageDescription": "This app saves edited images to your photo library."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#0A0A1A"
+      },
+      "permissions": [
+        "CAMERA",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE",
+        "MEDIA_CONTENT_CONTROL"
+      ],
+      "package": "com.filmhook.editor"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "The app accesses your photos to let you pick images for editing.",
+          "cameraPermission": "The app accesses your camera to let you take photos for editing."
+        }
+      ]
+    ]
+  }
+}

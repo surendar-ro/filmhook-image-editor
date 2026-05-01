@@ -1,0 +1,15 @@
+node_modules/
+.expo/
+dist/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.DS_Store
+*.png
+*.jpg
+*.jpeg
+test_output.js
+output_summary.html
+implementation_plan.md
+task.md
+walkthrough.md
